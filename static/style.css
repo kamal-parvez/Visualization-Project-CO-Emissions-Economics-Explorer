@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.varMDS-container,
+.scatterplotMatrix {
+    width: 100%;
+    height: calc(100% - 30px); /* adjust based on heading size */
+}
+
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    flex-shrink: 0;
+}
+
+/* Ensure the biplot container takes full space */
+.radar-plot-container {
+    width: 100%;
+    height: 400px;  /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Make the SVG responsive */
+.radar-plot {
+    width: 90%; /* Take most of the available space */
+    height: 100%; 
+}
+
+/* Style grid lines */
+.grid line {
+    stroke: gray;
+    stroke-opacity: 0.3;
+    shape-rendering: crispEdges;
+}
+
+/* Ensure clustered points have distinct colors */
+.radar-plot circle {
+    stroke: black;
+    stroke-width: 1px;
+    opacity: 0.85;
+}
+
+
+.varMDS-container {
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.varMDS-chart {
+    width: 100%;  
+    height: 100%; 
+}
